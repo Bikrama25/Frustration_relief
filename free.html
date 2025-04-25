@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Content | Serenity Space</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="glassmorphism">
+        <div class="logo">
+            <i class="fas fa-spa"></i>
+            <span>Serenity Space</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="free.html" class="active">Free Content</a></li>
+                <li><a href="premium.html">Premium</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button" id="main-cta">Get Premium</button>
+    </header>
+
+    <main class="free-content">
+        <section class="free-hero">
+            <h1>Free Frustration Relief Tools</h1>
+            <p>Start your journey to calm with our free mantra meditation</p>
+        </section>
+
+        <section class="meditation-section">
+            <div class="meditation-card glassmorphism">
+                <h2><i class="fas fa-om"></i> Mantra Meditation</h2>
+                <div class="meditation-player">
+                    <div class="timer-display" id="timer">05:00</div>
+                    <div class="controls">
+                        <button id="start-meditation"><i class="fas fa-play"></i> Start</button>
+                        <button id="pause-meditation"><i class="fas fa-pause"></i> Pause</button>
+                        <button id="reset-meditation"><i class="fas fa-redo"></i> Reset</button>
+                    </div>
+                    <div class="time-selector">
+                        <button data-time="180">3 min</button>
+                        <button data-time="300" class="active">5 min</button>
+                        <button data-time="600">10 min</button>
+                    </div>
+                </div>
+                <div class="meditation-guide">
+                    <h3>Guided Instructions:</h3>
+                    <ol>
+                        <li>Find a comfortable seated position</li>
+                        <li>Close your eyes and take 3 deep breaths</li>
+                        <li>Silently repeat the mantra "I am calm" with each exhale</li>
+                        <li>When your mind wanders, gently return to the mantra</li>
+                        <li>Continue until the timer ends</li>
+                    </ol>
+                </div>
+                <div class="benefits">
+                    <h3>Benefits:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Reduces stress hormones</li>
+                        <li><i class="fas fa-check-circle"></i> Improves focus</li>
+                        <li><i class="fas fa-check-circle"></i> Lowers blood pressure</li>
+                        <li><i class="fas fa-check-circle"></i> Enhances emotional stability</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="premium-cta">
+            <h2>Ready for More Advanced Tools?</h2>
+            <p>Our premium content includes specialized techniques for instant relief, decision-making, and targeted problem-solving.</p>
+            <a href="premium.html" class="primary-button">Explore Premium</a>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="scripts/meditation-timer.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
