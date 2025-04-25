@@ -1,0 +1,95 @@
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Button pulse animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(108, 99, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(108, 99, 255, 0);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+/* Delayed animations */
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* Meditation circle animation */
+@keyframes circlePulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+}
+
+.meditation-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(108, 99, 255, 0.2) 0%, rgba(108, 99, 255, 0) 70%);
+    position: absolute;
+    animation: circlePulse 4s ease-in-out infinite;
+}
+
+.meditation-circle:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.meditation-circle:nth-child(3) {
+    animation-delay: 2s;
+}
